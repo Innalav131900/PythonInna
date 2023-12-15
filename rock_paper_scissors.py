@@ -14,15 +14,9 @@ print(random_select)
 
 if user_select == random_select:
     print("game draw")
-if user_select == "rock" and random_select == "paper":
-    print("you lost")
-if user_select == "scissors" and random_select == "paper":
-    print("you win")
-if user_select == "paper" and random_select == "rock":
-    print("you win")
-if user_select == "scissors" and random_select == "rock":
-    print("you lost")
-if user_select == "paper" and random_select == "scissors":
-    print("you lost")
-if user_select == "rock" and random_select == "scissors":
-    print("you win")
+elif (user_select == "rock" and random_select == "paper"
+      or user_select == "scissors" and random_select == "rock"
+      or user_select == "paper" and random_select == "scissors"):
+    print("you lost, sorry")
+else:
+    print("you win, congratulations!")
